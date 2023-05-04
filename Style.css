@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+.Navbar_pages{
+    display: flex;
+    margin: 2px;
+    padding: 0 10px;
+    width: 80%;
+    justify-content:  flex-end;
+    align-items:flex-end;
+}
+.Navbar_dropdown{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+.Navbar_dropdown_close{
+    display: none;
+}
+
+.Navbar_pages > h4{
+    padding: 0 5px;
+}
+
+footer{
+    width:100%;
+    height: 10rem;
+    background: whitesmoke;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+footer > :nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-size: 2rem;
+}
+
+footer > :nth-child(2){
+    width: 30%;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+}
+/* rebelcanada@2023 */
+footer > :nth-child(3){
+    width: 40%;
+    padding-top: 1rem;
+
+}
+
+@media screen and (max-width: 600px) {
+    .Navbar_pages{
+        display: none;
+    }
+    .Navbar_dropdown{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 10%;
+        width: 10%;
+        height: 20%;
+        padding-top: 1rem;
+        background:whitesmoke;
+    }
+    .dropdown{
+        position: relative;
+        display: block;
+    }
+    .Navbar_dropdown_close{
+        display: none;
+        width: 100%;
+        right: 0px;
+    }
+    .Navbar_dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        }
+}
+
+/* @media only screen and (min-width: 768px) {
+    .dropdown{
+        display: none;
+    } 
+} */
+
+
